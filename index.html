@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Dashboard</title>
+
+  <!-- HTML -->
+
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="Katana-FW.css">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+  <nav>
+    <h2 class="logo">Elzero</h2>
+    <ul>
+      <li><a href="index.html" class="active"><i class="fa-solid fa-chart-simple fa-fw"></i>
+          <span>Dashboard</span> </a></li>
+      <li><a href="settings.html"><i class="fa-solid fa-gear fa-fw"></i>
+          <span>Settings</span> </a></li>
+      <li><a href="profile.html"><i class="fa-solid fa-user fa-fw"></i>
+          <span>Profile</span></a></li>
+      <li><a href="projects.html"><i class="fa-solid fa-list fa-fw"></i>
+          <span>Projects</span></a></li>
+      <li><a href="courses.html"><i class="fa-solid fa-graduation-cap fa-fw"></i>
+          <span>Courses</span></a></li>
+      <li><a href="friends.html"><i class="fa-solid fa-user-group fa-fw"></i>
+          <span>Friends</span></a></li>
+      <li><a href="files.html"><i class="fa-solid fa-file fa-fw"></i>
+          <span>Files</span></a></li>
+      <li><a href="plans.html"><i class="fa-solid fa-credit-card fa-fw"></i>
+          <span>Plans</span> </a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="top-bar">
+      <div class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" name="search" id="search" placeholder="Type a keyword">
+      </div>
+      <div class="btns">
+        <div class="icon"><i class="fa-regular fa-bell"></i></div>
+        <img src="Imgs/avatar.png" alt="">
+      </div>
+    </div>
+    
+    
+    <div class="bottom">
+
+
+      <h2 class="mainh">Dashboard</h2>
+      <div class="tiles">
+
+
+        <div class="welcome">
+          <div class="banner">
+            <div class="text">
+              <h4>Welcome</h4>
+              <span>Elzero</span>
+            </div>
+            <img src="Imgs/welcome.png" alt="">
+          </div>
+          <div class="welcomeb">
+
+            <img src="Imgs/avatar.png" alt="">
+            <div class="data">
+
+              <div class="dbox">
+                <p>Osama Elzero</p>
+                <span>Developer</span>
+              </div>
+              <div class="dbox">
+                <p>80</p>
+                <span>Projects</span>
+              </div>
+              <div class="dbox">
+                <p>$8500</p>
+                <span>Earned</span>
+              </div>
+            </div>
+            <a href="#profile">Profile</a>
+          </div>
+        </div>
+        <div class="draft p-20">
+          <div class="wtext">
+            <h2>Quick Draft</h2>
+            <span>Write a quick draft for yourself</span>
+          </div>
+          <form action="#" class=mtb10>
+            <input type="text" name="title" id="" placeholder="Title" class="d-b mtb10">
+            <textarea placeholder="Your thoughts" class="d-b mtb10"></textarea>
+            <input type="submit" value="Save" class="button-shape d-b">
+          </form>
+
+        </div>
+        <div class="targets p-20">
+          <div class="wtext ">
+            <h2>Yearly Targets</h2>
+            <span>Target of the year</span>
+          </div>
+          <div class="progress">
+            <div class="prog blue d-f g10 mtb10 ">
+              <div class="icon p-20 ss"><i class="fa-solid fa-dollar-sign"></i></div>
+              <div class="info">
+
+                <span class="pcolor mtb5">Money</span>
+                <h4 class="mtb5">$20.000</h4>
+                <div class="bar " data-num="80%">
+                  <span style="width:80%">
+
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="prog yellow d-f g10 mtb10">
+              <div class="icon p-20 ss"><i class="fa-solid fa-code"></i></div>
+              <div class="info">
+                <span class="pcolor mtb5">Projects</span>
+                <h4 class="mtb5">24</h4>
+                <div class="bar " data-num="55%">
+                  <span style="width:55%"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="prog green d-f g10 mtb10">
+              <div class="icon p-20 ss"><i class="fa-solid fa-user"></i></div>
+              <div class="info">
+                <span class="pcolor mtb5">Team</span>
+                <h4 class="mtb5">12</h4>
+                <div class="bar" data-num="75%">
+                  <span style="width:75%"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tickets p-20">
+          <div class="wtext">
+            <h2>Tickets Statistics</h2>
+            <span>Everything About Support Tickets</span>
+          </div>
+          <div class="boxes d-g g10 tc">
+            <div class="box">
+              <i class="fa-solid fa-list corange"></i>
+              <h2>2500</h2>
+              <span class="pcolor">Total</span>
+            </div>
+            <div class="box">
+              <i class="fa-solid fa-spinner cblue"></i>
+              <h2>500</h2>
+              <span class="pcolor">Pending</span>
+            </div>
+            <div class="box">
+              <i class="fa-regular fa-circle-check cgreen"></i>
+              <h2>1900</h2>
+              <span class="pcolor">Closed</span>
+            </div>
+            <div class="box">
+              <i class="cred fa-regular fa-circle-xmark"></i>
+              <h2>100</h2>
+              <span class="pcolor">Deleted</span>
+            </div>
+          </div>
+        </div>
+        <div class="news">
+          <div class="wtext">
+            <h2>Latest News</h2>
+          </div>
+          <div class="row">
+            <div class="info">
+              <img src="Imgs/news-03.png" alt="">
+              <div class="text">
+                <h5>Team increased</h5>
+                <span class="pcolor">3 Developers joiend</span>
+              </div>
+
+            </div>
+            <div class="date">
+              3 Days ago
+            </div>
+          </div>
+          <div class="row">
+            <div class="info">
+              <img src="Imgs/news-03.png" alt="">
+              <div class="text">
+                <h5>Team increased</h5>
+                <span class="pcolor">3 Developers joiend</span>
+              </div>
+
+            </div>
+            <div class="date">
+              3 Days ago
+            </div>
+          </div>
+          <div class="row">
+            <div class="info">
+              <img src="Imgs/news-03.png" alt="">
+              <div class="text">
+                <h5>Team increased</h5>
+                <span class="pcolor">3 Developers joiend</span>
+              </div>
+
+            </div>
+            <div class="date">
+              3 Days ago
+            </div>
+          </div>
+          <div class="row">
+            <div class="info">
+              <img src="Imgs/news-03.png" alt="">
+              <div class="text">
+                <h5>Team increased</h5>
+                <span class="pcolor">3 Developers joiend</span>
+              </div>
+
+            </div>
+            <div class="date">
+              3 Days ago
+            </div>
+          </div>
+
+        </div>
+        <div class="tasks p-20">
+          <div class="wtext mtb10">
+            <h2>Latest Tasks</h2>
+          </div>
+          <div class="row d-f ac ">
+            <div class="text">
+              <h4>Record One New Video</h4>
+              <span class="pcolor">Record Python Create Exe Project</span>
+            </div>
+            <div class="icon">
+              <i class="fa-solid fa-trash-can"></i>
+            </div>
+          </div>
+          <div class="row d-f ac ">
+            <div class="text">
+              <h4>Record One New Video</h4>
+              <span class="pcolor">Record Python Create Exe Project</span>
+            </div>
+            <div class="icon">
+              <i class="fa-solid fa-trash-can"></i>
+            </div>
+          </div>
+          <div class="row d-f ac ">
+            <div class="text">
+              <h4>Record One New Video</h4>
+              <span class="pcolor">Record Python Create Exe Project</span>
+            </div>
+            <div class="icon">
+              <i class="fa-solid fa-trash-can"></i>
+            </div>
+          </div>
+          <div class="row d-f ac del">
+            <div class="text">
+              <h4>Record One New Video</h4>
+              <span class="pcolor">Record Python Create Exe Project</span>
+            </div>
+            <div class="icon">
+              <i class="fa-solid fa-trash-can pcolor"></i>
+            </div>
+          </div>
+          <div class="row d-f ac ">
+            <div class="text">
+              <h4>Record One New Video</h4>
+              <span class="pcolor">Record Python Create Exe Project</span>
+            </div>
+            <div class="icon">
+              <i class="fa-solid fa-trash-can"></i>
+            </div>
+          </div>
+        </div>
+        <div class="search p-20">
+          <div class="wtext mtb10">
+            <h2>Top search items</h2>
+          </div>
+          <div class="items">
+            <div class="row grey">
+              <p>Keyword</p>
+              <span>Search Count</span>
+            </div>
+            <div class="row">
+              <p>programming</p>
+              <span>220</span>
+            </div>
+            <div class="row">
+              <p>programming</p>
+              <span>220</span>
+            </div>
+            <div class="row">
+              <p>programming</p>
+              <span>220</span>
+            </div>
+            <div class="row">
+              <p>programming</p>
+              <span>220</span>
+            </div>
+            <div class="row">
+              <p>programming</p>
+              <span>220</span>
+            </div>
+            <div class="row">
+              <p>programming</p>
+              <span>220</span>
+            </div>
+          </div>
+        </div>
+        <div class="files p-20">
+          <div class="wtext mtb10">
+            <h2>Latest Uploads</h2>
+          </div>
+          <div class="row d-f jb ac">
+            <div class="data d-f g10">
+              <img src="Imgs/pdf.svg" alt="">
+              <div class="text">
+                <h4>My-File.pdf</h4>
+                <span class="pcolor">Elzero</span>
+              </div>
+            </div>
+            <span class="size d-b">
+              2.9mb
+            </span>
+          </div>
+          <div class="row d-f jb ac">
+            <div class="data d-f g10">
+              <img src="Imgs/eps.svg" alt="">
+              <div class="text">
+                <h4>My-File.pdf</h4>
+                <span class="pcolor">Elzero</span>
+              </div>
+            </div>
+            <span class="size d-b">
+              2.9mb
+            </span>
+          </div>
+          <div class="row d-f jb ac">
+            <div class="data d-f g10">
+              <img src="Imgs/psd.svg" alt="">
+              <div class="text">
+                <h4>My-File.pdf</h4>
+                <span class="pcolor">Elzero</span>
+              </div>
+            </div>
+            <span class="size d-b">
+              2.9mb
+            </span>
+          </div>
+          <div class="row d-f jb ac">
+            <div class="data d-f g10">
+              <img src="Imgs/pdf.svg" alt="">
+              <div class="text">
+                <h4>My-File.pdf</h4>
+                <span class="pcolor">Elzero</span>
+              </div>
+            </div>
+            <span class="size d-b">
+              2.9mb
+            </span>
+          </div>
+        </div>
+        <div class="last p-20">
+          <div class="wtext">
+            <h2>Last Project Progress</h2>
+          </div>
+          <ul>
+            <li>Got the project</li>
+            <li>Started the project</li>
+            <li>project about to finish</li>
+            <li>Test the project</li>
+            <li>Finish the project</li>
+          </ul>
+        </div>
+        <div class="reminders p-20">
+          <h2>Reminders</h2>
+          <ul>
+            <li class="blue">
+              <span></span>
+              <div class="text">
+                <h4>Check my list</h4>
+                <span class="pcolor">28/09/2022 - 12:00am</span>
+              </div>
+            </li>
+            <li class="green">
+              <span></span>
+              <div class="text">
+                <h4>Check my list</h4>
+                <span class="pcolor">28/09/2022 - 12:00am</span>
+              </div>
+            </li>
+            <li class="yellow">
+              <span></span>
+              <div class="text">
+                <h4>Check my list</h4>
+                <span class="pcolor">28/09/2022 - 12:00am</span>
+              </div>
+            </li>
+            <li class="red">
+              <span></span>
+              <div class="text">
+                <h4>Check my list</h4>
+                <span class="pcolor">28/09/2022 - 12:00am</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="post p-20">
+          <h2 class="mb20">Latest Post</h2>
+          <div>
+            <div class="pdata d-f g10 ac">
+
+              <img src="imgs/avatar.png" alt="" class="w40">
+              <div>
+                <h4>Abdelrahman Medhat</h4>
+                <span class="pcolor">About 3 hours ago</span>
+              </div>
+            </div>
+            <p class="mtb20 tcm">
+              You Can Fool All Of The People Some Of The Time, And Some Of The People All Of The Time, But You Can't Fool All Of The People All Of The Time.
+            </p>
+            <div class="React d-f jb">
+              <div class="heart pcolor">
+                <i class="fa-regular fa-heart"></i>
+                <span>1.8K</span>
+              </div>
+              <div class="comment pcolor">
+
+                <i class="fa-regular fa-comment"></i>
+                <span>500</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="social p-20">
+          <h2 class="mb20">Social media stats</h2>
+          <div class="twitter d-f ac g10">
+            <div class="icon "><i class="fa-brands fa-twitter"></i></div>
+               <div class="stats d-f jb ac">
+                 <span class="follow">90K Followers</span>
+                 <a href="#">Follow</a>
+               </div>
+          </div>
+        <div class="facebook d-f ac g10">
+            <div class="icon "><i class="fa-brands fa-facebook"></i></div>
+               <div class="stats d-f jb ac">
+                 <span class="follow">90K Followers</span>
+                 <a href="#">Follow</a>
+               </div>
+          </div>
+                 <div class="youtube d-f ac g10">
+            <div class="icon "><i class="fa-brands fa-youtube"></i></div>
+               <div class="stats d-f jb ac">
+                 <span class="follow">90K Followers</span>
+                 <a href="#">subscribe</a>
+               </div>
+          </div>
+      <div class="linkedin d-f ac g10">
+            <div class="icon "><i class="fa-brands fa-linkedin"></i></div>
+               <div class="stats d-f jb ac">
+                 <span class="follow">90K Followers</span>
+                 <a href="#">Follow</a>
+               </div>
+        </div>
+
+          </div>
+     
+         
+         
+        </div>
+        
+   <div class="projects p-20 ">
+           <h2 class="mb20">Projects</h2>
+           <div class="taple">
+           <table>
+             <thead>
+               <th>Name</th>
+               <th>Finish date</th>
+               <th>Client</th>
+               <th>Price</th>
+               <th>Team</th>
+               <th>Status</th>
+             </thead>
+             <tbody>
+                <tr>
+                 <td>Ministry Wikipedia</td>
+                 <td>10 May 2022</td>
+                 <td>Ministry</td>
+                 <td>$5300</td>
+                 <td class="team">
+                   <div class="imgc">
+                   <img src="Imgs/team-01.png" alt="" class="w25">
+                   <img src="Imgs/team-02.png" alt="" class="w25">
+                   <img src="Imgs/team-03.png" alt="" class="w25" >
+                   <img src="Imgs/team-05.png" alt="" class="w25"></div>
+                 </td>
+                 <td class="Status">
+                    <div>Pending</div>                 
+                 </td>
+               </tr>
+                <tr>
+                 <td>Elzero</td>
+                 <td>10 May 2022</td>
+                 <td>Elzero Company</td>
+                 <td>$5300</td>
+                 <td class="team">
+                  <div class="imgc">
+                   <img src="Imgs/team-01.png" alt="" class="w25">
+                   <img src="Imgs/team-02.png" alt="" class="w25">
+                   <img src="Imgs/team-03.png" alt="" class="w25 " ></div>
+                 </td>
+                 <td class="Status">
+                    <div>In progress</div>                 
+                 </td>
+               </tr>
+                <tr>
+                 <td>Bouba shop</td>
+                 <td>10 May 2022</td>
+                 <td>Bouba app</td>
+                 <td>$5300</td>
+                 <td class="team">
+                   <div class="imgc">
+                   <img src="Imgs/team-01.png" alt="" class="w25">
+                   <img src="Imgs/team-02.png" alt="" class="w25 "></div>
+                 </td>
+                 <td class="Status">
+                    <div>Completed</div>  
+                 </td>
+               </tr>
+                <tr>
+                 <td>Mahmoud Website</td>
+                 <td>10 May 2022</td>
+                 <td>Mahmoud</td>
+                 <td>$5300</td>
+                 <td class="team">
+                   <div class="imgc">
+                   <img src="Imgs/team-01.png" alt="" class="w25 ">
+                   <img src="Imgs/team-02.png" alt="" class="w25 "></div>
+                 </td>
+                 <td class="Status">
+                    <div>Completed</div>                 
+                 </td>
+               </tr>
+             </tbody>
+           </table>
+           </div>
+         </div>
+ 
+         
+         
+      </div>
+
+   </main>
+     
+</body>
+
+</html>

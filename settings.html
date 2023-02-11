@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Settings</title>
+    <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="Katana-FW.css">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+  
+  
+</head>
+
+<body>
+  <nav>
+    <h2 class="logo">Elzero</h2>
+    <ul>
+      <li><a href="index.html" ><i class="fa-solid fa-chart-simple fa-fw"></i>
+          <span>Dashboard</span> </a></li>
+      <li><a href="settings.html" class="active"><i class="fa-solid fa-gear fa-fw"></i>
+          <span>Settings</span> </a></li>
+      <li><a href="profile.html"><i class="fa-solid fa-user fa-fw"></i>
+          <span>Profile</span></a></li>
+      <li><a href="projects.html"><i class="fa-solid fa-list fa-fw"></i>
+          <span>Projects</span></a></li>
+      <li><a href="courses.html"><i class="fa-solid fa-graduation-cap fa-fw"></i>
+          <span>Courses</span></a></li>
+      <li><a href="friends.html"><i class="fa-solid fa-user-group fa-fw"></i>
+          <span>Friends</span></a></li>
+      <li><a href="files.html"><i class="fa-solid fa-file fa-fw"></i>
+          <span>Files</span></a></li>
+      <li><a href="plans.html"><i class="fa-solid fa-credit-card fa-fw"></i>
+          <span>Plans</span> </a></li>
+    </ul>
+  </nav>
+  <main>    
+  <div class="top-bar">
+      <div class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" name="search" id="search" placeholder="Type a keyword">
+      </div>
+      <div class="btns">
+        <div class="icon"><i class="fa-regular fa-bell"></i></div>
+        <img src="Imgs/avatar.png" alt="">
+      </div>
+    </div>
+    <div class="sbottom">
+      <h2 class="mainh">Settings</h2>
+      <div class="widgets">
+     <div class="control  p-20">
+       <div class="mb20">
+       <h2>Site Control</h2>
+       <span class="pcolor">
+         Control The Website If There Is Maintenance
+       </span>
+       </div>
+      <div class="d-f jb ac mb20">
+        <div class="text">
+       <h4>Website control</h4>
+       <span class="pcolor f12">Open/Close Website And Type The Reason</span>
+       
+       </div>
+       <input type="checkbox" class="check" checked/>
+       </div>
+       <textarea  class=""placeholder="Clone Message Content"></textarea>
+     </div> 
+     <div class="general p-20">
+           <h2 class="mb20">General Info</h2>
+           <form action="">
+       <label for="" class="d-b pcolor">First Name</label>
+       <input type="text" placeholder="First Name"> 
+       <label for="" class="d-b pcolor mt20 ">Last Name</label>
+       <input type="text" placeholder="Last Name" class=""> 
+      
+         <label for="" class="d-b pcolor mt20">Email</label>
+         <div class="email d-f ac g10">
+         <input type="text" value="o@nn.sa" class="pcolor" disabled>
+         <a href="#">Change</a>
+       </div>
+       </form>
+     </div> 
+     <div class="Security p-20">
+       <div class="mb20">
+       <h2>Security Info</h2>
+       <span class="pcolor">
+         Security Information About Your Account
+       </span>
+       </div>
+      <div class="row d-f ac jb">
+        <div class="text">
+          <p>Passsword</p>
+          <span class="pcolor f12">Last Change On 25/10/2021</span>
+        </div>
+        <a href="#" class="button-shape">Change</a>
+      </div> 
+       <div class="row d-f ac jb brdr">
+        <div class="text">
+          <p>Two-Factor Authentication</p>
+          <span class="pcolor f12">Enable/Disable The Feature</span>
+        </div>
+        <input type="checkbox" name="" id="" class="check">
+      </div> 
+          <div class="row d-f ac jb">
+        <div class="text">
+          <p>Devices
+Check </p>
+          <span class="pcolor f12">Check The Login Devices List</span>
+        </div>
+        <a href="#" class="button-shape grey">Devices</a>
+      </div> 
+     </div>
+     <div class="social p-20">
+       <div class="mb20">
+       <h2>Social Info</h2>
+       <span class="pcolor">
+        Social Media Information 
+       </span>
+       </div>
+       <form action="#">
+         <div class="username ">
+     
+           <input type="text" placeholder="Twitter Username">
+                 <i class="fa-brands fa-twitter fa-fw"></i>
+         </div>
+         <div class="username">
+   
+           <input type="text" placeholder="Facebook Username">
+                   <i class="fa-brands fa-facebook fa-fw"></i>
+         </div>
+          <div class="username">
+          
+           <input type="text" placeholder="LinkedIn Username">
+            <i class="fa-brands fa-linkedin fa-fw"></i>
+              </div>
+         <div class="username">
+        
+           <input type="text" placeholder="YouTube Username">
+              <i class="fa-brands fa-youtube fa-fw"></i>
+         </div>
+
+       </form>
+     </div>
+     <div class="wcont p-20">
+             <div class="mb20">
+       <h2>Widgets Control</h2>
+       <span class="pcolor">
+        Show/Hide Widgets
+       </span>
+       </div>
+      
+       
+       <label class=" d-f ac g10 mb20">
+<input type="checkbox" class="checkbox" checked>
+         Quick draft</label>
+    <label class=" d-f ac g10 mb20">
+<input type="checkbox" class="checkbox" checked>
+         Yearly Targets</label>
+                <label class=" d-f ac g10 mb20">
+<input type="checkbox" class="checkbox" checked>
+        Tickets stats </label>
+               <label class=" d-f ac g10 mb20">
+<input type="checkbox" class="checkbox" checked>
+         Project progress</label>
+                <label class=" d-f ac g10 mb20">
+<input type="checkbox" class="checkbox">
+         My Info</label>
+             <label class=" d-f ac g10 ">
+<input type="checkbox" class="checkbox" checked>
+         Latest news</label>
+       </div>
+     <div class="backup p-20">
+          <div class="mb20">
+       <h2>Backup Manager</h2>
+       <span class="pcolor">
+        Control Backup Time And Location
+       </span>
+     </div>  
+     <form action="#" class="radios mb20">
+  
+        <label class="d-f g10 ac mb10" for="day">
+              <input type="radio" id="day" name="control">
+         Daily 
+           </label> 
+           
+   
+
+
+   <label class=" d-f ac g10 mb10" for="week">
+          <input type="radio" id="week" name="control" checked >
+             Weekly 
+           </label> 
+          
+          
+              <label class=" d-f ac g10 " for="month">
+              <input type="radio" id="month" name="control">
+             Monthly
+           </label> 
+     </form>
+     <div class="servers p-20 d-f ac g10">
+          <input type="radio" name="server" id="mega" class="mega">
+       <label for="mega">
+      
+         <i class="fa-solid fa-server"></i> <p>Megaman</p></label>
+            <input type="radio" name="server" id="zero" class="zero" checked>
+           <label for="zero">
+        
+             <i class="fa-solid fa-server"></i> <p>Zero</p></label>
+         <input type="radio" name="server" id="sigma" class="sigma">
+           <label for="sigma">
+           
+             <i class="fa-solid fa-server"></i> <p>Sigma</p></label>
+     </div>
+     </div>
+     </div>
+    </div>
+    </main>
+</body>
+
+</html>
